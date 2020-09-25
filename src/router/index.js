@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import TabDemo from '../views/TabDemo.vue'
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -14,6 +15,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/tab',
+    name: 'TabDemo',
+    component: TabDemo
   },
   {
     path: '/user',
